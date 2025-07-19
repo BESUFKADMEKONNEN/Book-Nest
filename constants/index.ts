@@ -1,24 +1,3 @@
-// constants.ts
-export const FIELD_NAMES = {
-  fullName: "Full Name",
-  email: "Email",
-  password: "Password",
-  universityId: "University ID",
-  universityCard: "University Card",
-};
-
-export const FIELD_TYPES = {
-  fullName: "text",
-  email: "email",
-  password: "password",
-  universityId: "number",
-  universityCard: "text", // or "file" if using FileUpload
-};
-
-
-
-
-
 export const navigationLinks = [
   {
     href: "/library",
