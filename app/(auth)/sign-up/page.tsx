@@ -1,11 +1,11 @@
+"use client";
+
 import AuthForm from "@/components/AuthForm";
+import { signUp } from "@/lib/actions/auth";
 import { signUpSchema } from "@/lib/validation/AuthValidation";
 import React from "react";
 
 export default function page() {
-  
-  const signUpF = async (params: AuthCredentials) => { }
-
   return (
     <AuthForm
       type="SIGN_UP"
@@ -14,10 +14,10 @@ export default function page() {
         fullName: "",
         email: "",
         password: "",
-        universityId:0,
+        universityId: 0,
         universityCard: "",
       }}
-      onSubmit={() => {}}
+      onSubmit={signUp}
     />
   );
 }
